@@ -2,7 +2,10 @@ package DSA_450.src;
 
 import java.util.ArrayList;
 
-public class Symmetric_Tree
+//We have to prove if the tree is symmetric or not.
+//We can use inorder traversal to traverse the tree and add the nodes into a list and then
+//we can check for both the halves of the list are same or not
+public class Symmetric_Tree_Array
 {
     static ArrayList<Integer> List=new ArrayList<>();
     public static ArrayList<Integer> Nodes(Node x)
@@ -36,7 +39,10 @@ public class Symmetric_Tree
     }
     public static void main(String[] args) {
         Node root=new Node(1);
-        
+        root.left=new Node(2);
+        root.left.left=new Node(3);
+        root.right=new Node(2);
+        root.right.right=new Node(2);
         System.out.println(SymmetricTree(root));
         Node.Print_Tree(root);
     }
