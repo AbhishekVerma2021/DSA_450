@@ -1,11 +1,13 @@
+package DSA_450.src;
+
 import java.util.Scanner;
 
-public class TreeDiameter
+public class BTfromArray
 {
 
     int h;
     static String[] str;
-    TreeDiameter(int he)
+    BTfromArray(int he)
     {
         h = he;
         str=new String[h];
@@ -22,9 +24,7 @@ public class TreeDiameter
         if(str[parent]==null)
         {
             System.out.println("No PARENT!!! of"+index);
-            return;
         }
-
         else
         {
             str[index]=st;
@@ -36,7 +36,6 @@ public class TreeDiameter
         if(str[parent]==null)
         {
             System.out.println("No PARENT!!! of "+ index);
-            return;
         }
         else
         {
@@ -47,7 +46,7 @@ public class TreeDiameter
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("ENTER HEIGHT");
-        TreeDiameter obj=new TreeDiameter(sc.nextInt());
+        BTfromArray obj=new BTfromArray(sc.nextInt());
 
 
         Root("A");
