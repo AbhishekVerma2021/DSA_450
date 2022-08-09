@@ -1,13 +1,4 @@
-class Node
-{
-    Node left,right;
-    int data;
-    Node(int data)
-    {
-        this.data=data;
-    }
-}
-
+package DSA_450.src;
 public class BST
 {
     public static void insert(Node x,int data)
